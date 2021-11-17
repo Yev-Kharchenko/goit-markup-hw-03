@@ -41,6 +41,9 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
+
+/* марлдины и падинги */
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -54,24 +57,64 @@ body {
   padding-bottom: 25px;
   outline: 2px solid tomato;
 }
-.navigation {
+.site-nav,
+.contacts {
   padding-top: 32px;
   padding-bottom: 32px;
   outline: 2px solid tomato;
 }
+.hero-section {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+}
+
 .hero-text {
+  width: 696px;
   margin-bottom: 30px;
   outline: 2px solid tomato;
 }
-.team-section,
-.section {
+.order {
+  padding: 10px, 32px;
+  min-width: 200px;
+  height: 50px;
+}
+.section,
+.team-section {
   padding-top: 94px;
   padding-bottom: 94px;
   outline: 2px solid tomato;
 }
+.title-list {
+  margin-bottom: 10px;
+  width: 270px;
+}
+.project-type {
+  width: 270px;
+}
+.section-title {
+  margin-bottom: 50px;
+}
+
 .footer-background {
   padding-top: 60px;
   padding-bottom: 60px;
+  outline: 2px solid tomato;
+}
+.location {
+  margin-top: 20px;
+}
+.contacts-footer {
+  margin-top: 9px;
+}
+.team-member {
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-left: 60px;
 }
 
 .logo {
@@ -152,6 +195,7 @@ body {
   line-height: 1.1;
   margin-bottom: 50px;
 }
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
