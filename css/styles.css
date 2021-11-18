@@ -42,8 +42,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* марлдины и падинги */
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -51,52 +49,106 @@ body {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
-.logo,
-.color-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+header > .container {
+  display: flex;
+}
+nav {
+  display: flex;
+  margin-right: auto;
+}
+nav > ul {
+  display: flex;
+}
+nav + ul {
+  display: flex;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
   outline: 2px solid tomato;
 }
+}
+
+.navigation:not(:last-child),
+.contact-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+nav > a {
+  margin-right: 93px;
+  outline: 2px solid tomato;
+}
+
 .site-nav,
 .contacts {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   outline: 2px solid tomato;
 }
+.logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .hero-section {
-  width: 1600px;
-  height: 600px;
   padding-top: 200px;
-  padding-right: 452px;
   padding-bottom: 280px;
-  padding-left: 452px;
+  text-align: center;
 }
 
 .hero-text {
   width: 696px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   outline: 2px solid tomato;
 }
 .order {
-  padding: 10px, 32px;
+  padding: 10px 32px;
   min-width: 200px;
-  height: 50px;
 }
-.section,
+.feature-section,
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
   outline: 2px solid tomato;
 }
+.project-section {
+  padding-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
+.features,
+.photos,
+.team {
+  display: flex;
+}
+.features li:not(:last-child),
+.photos li:not(:last-child),
+.team li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card {
+  background-color: var(--main-background);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .title-list {
   margin-bottom: 10px;
   width: 270px;
 }
-.project-type {
-  width: 270px;
-}
+
 .section-title {
   margin-bottom: 50px;
+  text-align: center;
+}
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .footer-background {
@@ -109,12 +161,6 @@ body {
 }
 .contacts-footer {
   margin-top: 9px;
-}
-.team-member {
-  margin-top: 30px;
-  margin-right: 60px;
-  margin-bottom: 10px;
-  margin-left: 60px;
 }
 
 .logo {
@@ -133,8 +179,17 @@ body {
 .link {
   text-decoration: none;
 }
-.visibility {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .site-nav {
@@ -200,6 +255,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 .position {
   font-weight: 400;
@@ -220,6 +276,8 @@ body {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  border: 0;
+  border-radius: 4px;
 }
 .nav-button:hover,
 .nav-button:focus,
