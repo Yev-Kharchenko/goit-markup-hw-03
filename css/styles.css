@@ -33,8 +33,6 @@ address {
   font-style: normal;
 }
 
-/* внешняя граница для проверки отступов outline: 2px tomato; */
-
 body {
   background-color: var(--main-background);
   color: var(--main-text-color);
@@ -47,37 +45,55 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 header > .container {
   display: flex;
+  border-bottom: 1px solid #ececec;
 }
 nav {
   display: flex;
   margin-right: auto;
 }
-nav > ul {
-  display: flex;
-}
+nav > ul,
 nav + ul {
   display: flex;
 }
+
 .filters {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  outline: 2px solid tomato;
 }
+.nav-button {
+  padding: 6px 22px;
+}
+.filters li:not(:last-child) {
+  margin-right: 8px;
 }
 
-.navigation:not(:last-child),
-.contact-list:not(:last-child) {
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+.set {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.set:nth-child(3n) {
+  margin-right: 0;
+}
+
+.set:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.navigation li:not(:last-child),
+.contact-list li:not(:last-child) {
   margin-right: 50px;
 }
 
 nav > a {
   margin-right: 93px;
-  outline: 2px solid tomato;
 }
 
 .site-nav,
@@ -85,7 +101,6 @@ nav > a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  outline: 2px solid tomato;
 }
 .logo {
   display: block;
@@ -95,14 +110,13 @@ nav > a {
 
 .hero-section {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
 .hero-text {
   width: 696px;
   margin: 0 auto 30px;
-  outline: 2px solid tomato;
 }
 .order {
   padding: 10px 32px;
@@ -112,11 +126,9 @@ nav > a {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
 }
 .project-section {
   padding-bottom: 94px;
-  outline: 2px solid tomato;
 }
 
 .features,
@@ -136,6 +148,15 @@ nav > a {
   padding-bottom: 30px;
   text-align: center;
 }
+.portfolio {
+  background-color: var(--main-background);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
 
 .title-list {
   margin-bottom: 10px;
@@ -154,7 +175,6 @@ nav > a {
 .footer-background {
   padding-top: 60px;
   padding-bottom: 60px;
-  outline: 2px solid tomato;
 }
 .location {
   margin-top: 20px;
