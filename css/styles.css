@@ -32,6 +32,9 @@ button {
 address {
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   background-color: var(--main-background);
@@ -62,7 +65,7 @@ nav + ul {
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .nav-button {
   padding: 6px 22px;
@@ -136,6 +139,7 @@ nav > a {
 .team {
   display: flex;
 }
+
 .features li:not(:last-child),
 .photos li:not(:last-child),
 .team li:not(:last-child) {
@@ -150,12 +154,8 @@ nav > a {
 }
 .portfolio {
   background-color: var(--main-background);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  border-left: 1px solid #ececec;
+  padding: 20px 24px;
+  border: 1px solid #ececec;
 }
 
 .title-list {
@@ -176,12 +176,6 @@ nav > a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.location {
-  margin-top: 20px;
-}
-.contacts-footer {
-  margin-top: 9px;
-}
 
 .logo {
   color: var(--accent-text-black);
@@ -195,10 +189,11 @@ nav > a {
   font-size: 26px;
   line-height: 1.2;
 }
-
-.link {
-  text-decoration: none;
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -265,6 +260,13 @@ nav > a {
   text-transform: uppercase;
   color: var(--main-text-color);
 }
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.1;
@@ -316,6 +318,7 @@ nav > a {
   line-height: 1.8;
   color: var(--secondary-text-color);
 }
+
 .hero-text,
 .order,
 .logo-footer,
@@ -325,10 +328,14 @@ nav > a {
 .location {
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 9px;
 }
 .contacts-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
+}
+.contact:not(:last-child) {
+  margin-bottom: 9px;
 }
